@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Bhupathi's Projects</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+   body {
+  margin: 0;
+  font-family: "Poppins", Arial, sans-serif;
+  background: #f5f5f5; /* light neutral background */
+  color: #333;          /* dark text for readability */
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+
+    /* Hero Section */
+    .hero {
+      background: url('https://images.unsplash.com/photo-1505691723518-36a5ac3be353?auto=format&fit=crop&w=1400&q=80') no-repeat center center;
+      background-size: cover;
+      color: #fff;
+      text-align: center;
+      padding: 120px 20px 100px;
+      position: relative;
+    }
+    .hero h1 {
+      font-size: 3rem;
+      margin: 0;
+      text-shadow: 2px 2px 8px rgba(0,0,0,0.6);
+    }
+    .hero p {
+      font-size: 1.4rem;
+      margin-top: 10px;
+      text-shadow: 1px 1px 5px rgba(0,0,0,0.5);
+    }
+
+    /* Section Styling */
+    .section {
+      padding: 60px 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+    .section h2 {
+      text-align: center;
+      font-size: 2rem;
+      margin-bottom: 20px;
+      color: #004080;
+      position: relative;
+    }
+    .section h2::after {
+      content: "";
+      width: 60px;
+      height: 4px;
+      background: #004080;
+      display: block;
+      margin: 10px auto 0;
+      border-radius: 2px;
+    }
+
+    /* Description Card */
+    .description-card {
+      background: rgba(255,255,255,0.9);
+      border-radius: 15px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+      margin: 40px auto;
+      padding: 30px;
+      max-width: 900px;
+      text-align: left;
+      line-height: 1.6;
+    }
+    .description-card strong {
+      display: block;
+      font-size: 1.2rem;
+      margin: 15px 0 5px;
+      color: #004080;
+    }
+    .description-card ul {
+      margin: 10px 0 0 20px;
+      padding: 0;
+    }
+    .description-card ul li {
+      margin-bottom: 8px;
+    }
+
+    /* Brochures & Plans */
+    .brochures {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 30px;
+    }
+    .brochure-card {
+      background: rgba(255,255,255,0.95);
+      border-radius: 15px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+      overflow: hidden;
+      transition: transform 0.3s;
+    }
+    .brochure-card:hover {
+      transform: translateY(-5px);
+    }
+    .brochure-card iframe {
+      width: 100%;
+      height: 260px;
+      border: none;
+    }
+    .brochure-card .content {
+      padding: 20px;
+      text-align: center;
+    }
+    .brochure-card a {
+      display: inline-block;
+      padding: 10px 20px;
+      background: #004080;
+      color: #fff;
+      border-radius: 8px;
+      text-decoration: none;
+      transition: background 0.3s;
+    }
+    .brochure-card a:hover {
+      background: #0066cc;
+    }
+
+    /* Videos */
+    .videos {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 30px;
+    }
+    .video-frame {
+      aspect-ratio: 16/9;
+      border-radius: 15px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+      width: 100%;
+      border: none;
+    }
+
+    /* Footer */
+    footer {
+      background: linear-gradient(to right, #003366, #004080);
+      color: #fff;
+      text-align: center;
+      padding: 30px 20px;
+      margin-top: auto;
+    }
+    footer p {
+      margin: 6px 0;
+      font-size: 0.95rem;
+    }
+    footer .footer-cta {
+      margin-top: 15px;
+    }
+    .whatsapp-button {
+      display: inline-block;
+      background: #25d366;
+      color: white;
+      padding: 14px 28px;
+      font-size: 1rem;
+      font-weight: 600;
+      border-radius: 50px;
+      text-decoration: none;
+      box-shadow: 0 6px 18px rgba(0,0,0,0.2);
+      transition: background 0.3s ease, transform 0.2s ease;
+    }
+    .whatsapp-button:hover {
+      background: #1ebe5d;
+      transform: translateY(-2px);
+    }
+
+    @media (max-width: 600px) {
+      .hero h1 {
+        font-size: 2rem;
+      }
+      .hero p {
+        font-size: 1rem;
+      }
+      .description-card {
+        padding: 20px;
+        font-size: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <h1>Bhupathi Projects</h1>
+    <p>Building Dreams, Delivering Trust</p>
+  </section>
+
+  <!-- Project Description -->
+  <section class="section">
+    <div class="description-card">
+      <strong>భూమి మీద పెట్టుబడి, ఎన్నో రెట్ల లాభం</strong>
+      భూమిపై మీ తెలివైన పెట్టుబడి
+      మీ భావి తరాలకు విలువైన రాబడి
+
+      <strong>భూమిని మాత్రమే నమ్ముకోండి</strong>
+      భూమిని నమ్ముకున్నవాళ్ళు ఇప్పటివరకు నష్టపోయినట్టు చరిత్రలో ఎవరు లేరు.
+
+      <strong>భూపతిప్రైమ్</strong>
+      CRDA మల్లవల్లి
+
+      <ul>
+        <li>గ్రేటర్ విజయవాడ కు అతి చేరువలో</li>
+        <li>NH-1630</li>
+        <li>నాలుగు జాతీయ రహదారులను కలిపే పెడన - విస్సన్నపేట - లక్ష్మీపురం NH-216H దగ్గరలో</li>
+        <li>ఇంటర్నేషనల్ ఎయిర్ పోర్ట్ 16 కి.మీ</li>
+        <li>940 ఇండస్ట్రీస్ తో 1860 ఎకరాలలో రూపుదిద్దుకున్న మల్లవల్లి ఇండస్ట్రియల్ పార్కుకి అతి దగ్గరలో</li>
+        <li>100%</li>
+        <li>క్లియర్ టైటిల్</li>
+        <li>స్పాట్ రిజిస్ట్రేషన్</li>
+        <li>CRDA ప్రపోస్ట్</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Brochures Section -->
+  <section class="section">
+    <h2>Our Brochures</h2>
+    <div class="brochures">
+      <div class="brochure-card">
+        <iframe src="https://drive.google.com/file/d/1oUaz61wLc10Glj7pF-hJJ-IkFXEo9Pgp/preview"></iframe>
+        <div class="content">
+          <a href="https://drive.google.com/uc?export=download&id=1oUaz61wLc10Glj7pF-hJJ-IkFXEo9Pgp" target="_blank" rel="noopener noreferrer">Download Brochure</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Plan Section -->
+  <section class="section">
+    <h2>Project Plans</h2>
+    <div class="brochures">
+      <div class="brochure-card">
+        <iframe src="https://drive.google.com/file/d/1-WePkhoNY3SDP9dhuUijr2mGss8mYuKX/preview"></iframe>
+        <div class="content">
+          <a href="https://drive.google.com/uc?export=download&id=1-WePkhoNY3SDP9dhuUijr2mGss8mYuKX" target="_blank" rel="noopener noreferrer">Download Plan</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Videos Section -->
+  <section class="section">
+    <h2>Plots Showcase</h2>
+    <div class="videos">
+      <iframe class="video-frame" src="https://www.youtube.com/embed/JJQJbnMOksk" allowfullscreen></iframe>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Bhupathi's Projects | All Rights Reserved</p>
+    <p>Designed with ❤ for real estate excellence</p>
+    <div class="footer-cta">
+      <a href="https://wa.me/919640421369?text=Hi%20Bhupathi%20Projects%2C%20I%20am%20interested%20in%20booking%20a%20site%20visit.%20Please%20assist." 
+         class="whatsapp-button" target="_blank" rel="noopener noreferrer">
+        💬 Book a Site Visit on WhatsApp
+      </a>
+    </div>
+  </footer>
+
+</body>
+</html>
